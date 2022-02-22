@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src='./toll.js'></script>
+<meta charset="UTF-8"/>
+</head>
+
+<body>
+    <header>简单的跑团骰子</header>
+    <main>
+        <button id='toll1' class='toll' onclick=toll1()>1d6</button>
+        <button id='toll2' class='toll' onclick=toll2()>1d10</button>
+        <button id='toll3' class='toll' onclick=toll3()>1d20</button>
+        <button id='toll4' class='toll' onclick=toll4()>1d100</button>
+        <button id='randomtoll' class='toll' onclick=toll5()>自定义</button>
+        <button id='hiddentoll' >
+            <form name='myform'>
+                <label>你要摇几个骰子？</label><input type='number' name='times' placeholder="输入大于0的整数"/>
+                <br/>
+                <label>你要摇多大的骰子？</label><input type='number' name='size' placeholder="输入大于0的整数"/>
+                <br/>
+                <submit onclick=hide()>摇骰子！</submit>
+            </form>
+        </button>
+    </main>
+</body>
+</html>

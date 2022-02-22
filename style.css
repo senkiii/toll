@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'SourceHan-Light';
+    src: url(./SourceHanSerifCN-Light.otf);
+}
+
+
+
+.toll{
+    border: 1px rgba(0,0,0,0.1);
+
+}
+body{
+    background-image:url(background.png);
+    background-size: auto 1000px;
+    background-repeat: repeat-x;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row dense;
+    width: 100%;
+    height: 100%;
+    font-family: 'SourceHan-Light';
+}
+header{
+    color: rgb(71, 2, 2);
+    grid-area: 1/1/2/4;
+    justify-self: center;
+    align-self: end;
+    font-size: 66px;
+    padding-bottom: 15px;
+    padding-top: 30px;
+}
+main{
+    grid-area:2/1/4/4;
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+    gap: 5px;
+    grid-auto-flow: row dense;
+    justify-content: center;
+    
+}
+button{
+    border:none;
+    background-color: whitesmoke;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+    border-radius: 5px;
+    transition: 0.2s;
+    font-size: 30px;
+    color: rgb(71,2,2);
+}
+button:hover{
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,0.3);
+}
+#hiddentoll{
+    display:none;
+    font-size:16px;
+    line-height: 30px;
+}
+
+input{
+    border:0px;
+    border-radius: 2px;
+    height: 20px;
+    padding-left:7px ;
+    padding-right: 7px;
+}
+
+submit{
+    background-color: rgb(214, 174, 174);
+    border-radius: 3px;
+    padding-left: 12px;
+    padding-right:5px;
+    padding-top:3px;
+    padding-bottom: 3px;
+    line-height: 40px;
+    font-family: 'SourceHan-Light';
+}
+label{
+    font-family: 'SourceHan-Light';
+}
+#randomtoll{
+    font-family: 'SourceHan-Light';
+}
